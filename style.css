@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 footer {
@@ -11,31 +11,31 @@ footer {
 }
 
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .justify-content-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .justify-content-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .justify-content-evenly {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .justify-content-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .align-items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .text-align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-padding-left {
@@ -47,19 +47,19 @@ footer {
 }
 
 .background-green {
-    background-color: rgb(0, 147, 68);
+  background-color: rgb(0, 147, 68);
 }
 
 .background-white {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .background-red {
-    background-color: rgb(207, 39, 52);
+  background-color: rgb(207, 39, 52);
 }
 
 .text-green {
-    color: rgb(0, 147, 68);
+  color: rgb(0, 147, 68);
 }
 
 .flag-height {
@@ -67,36 +67,36 @@ footer {
 }
 
 .flag-green {
-    width: 650px;
-    background-color: rgb(0, 147, 68);
-    margin-left: 0px;
-    padding-top: 0px;
+  width: 650px;
+  background-color: rgb(0, 147, 68);
+  margin-left: 0px;
+  padding-top: 0px;
 }
 
 .text-white {
-    color: white;
+  color: white;
 }
 
 .flag-white {
-    width: 650px;
-    background-color: white;
-    margin-left: 0px;
-    padding: 0px;
+  width: 650px;
+  background-color: white;
+  margin-left: 0px;
+  padding: 0px;
 }
 
 .text-red {
-    color: rgb(207, 39, 52);
+  color: rgb(207, 39, 52);
 }
 
 .flag-red {
-    width: 650px;
-    background-color: rgb(207, 39, 52);
-    margin-left: 0px;
-    padding: 0px;
+  width: 650px;
+  background-color: rgb(207, 39, 52);
+  margin-left: 0px;
+  padding: 0px;
 }
-  
+
 .textheader10 {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .textheader15 {
@@ -104,19 +104,19 @@ footer {
 }
 
 .textheader20 {
-    padding-top: 20px;
+  padding-top: 20px;
 }
-  
+
 .textheader40 {
-    padding-top: 40px;
+  padding-top: 40px;
 }
-  
+
 .textheader60 {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 .textheader80 {
-    padding-top: 80px;
+  padding-top: 80px;
 }
 
 .textbottom {
@@ -124,88 +124,117 @@ footer {
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.button {
+  background-color: white; /* Blue background */
+  border: black; /* Remove borders */
+  border-style: double;
+  cursor: pointer; /* Mouse pointer on hover */
+  border-color: black;
+}
+
+.btn:hover {
+  background-color: 0, 147, 68;
+}
+
+/* BLINKing text */
+.blink {
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
   }
-  
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
+  50%{
+    opacity: 0.7;
   }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
+  100%{
+    opacity: 0;
   }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
+}
